@@ -1,0 +1,49 @@
+:root {
+    /* Cores - Temas*/
+    --cor-marrom: #804000;
+    --cor-marrom-claro: #945F29;
+    --cor-marrom-desativado: #A97D52;
+    --cor-marrom-tap: #8040002f;
+    --cor-verde: #008040;
+    --cor-verde-claro: #25915B;
+    --cor-verde-desativado: #4AA176;
+    --cor-verde-tap: #0080402f;
+    /* Cores - Outras*/
+    --cor-texto-principal: #0A0500;
+    --cor-texto-secundario: #312D29;
+    --cor-texto-terciario: #595552;
+    --cor-texto-desativado: #0A0500A0;
+    --cor-itens-inativos:#807D7A;
+    --cor-divisoes:#A7A5A3;
+    --cor-fundo: #D2D1D3;
+    --cor-fundo-medio:#E6D9CC;
+    --cor-fundo-claro: #FFFAF5;
+    --cor-sombra:#0a050029;
+    /* Fonte - Tamanho na raíz*/
+    font-size: 16px;
+    /* Fonte - Famílias */
+    --fonte-familia-principal:'Montserrat', sans-serif;
+    --fonte-familia-auxiliar: 'Montserrat Alternates', sans-serif;
+    /* Fonte - Tamanhos */
+    --fonte-tamanho-h1: 3.25rem;
+    --fonte-tamanho-h2: 2.5rem;
+    --fonte-tamanho-h3: 2rem;
+    --fonte-tamanho-h4: 1.625rem;
+    --fonte-tamanho-texto-grande: 1.25rem;
+    --fonte-tamanho-texto-corrido: 1rem;
+    --fonte-tamanho-texto-menor: 0.875rem;
+    --fonte-tamanho-texto-legenda: 0.75rem;
+    --fonte-tamanho-texto-legenda-menor: 0.625rem;
+    /* Fonte - Pesos */
+    --fonte-peso-extralight: 200;
+    --fonte-peso-light: 300;
+    --fonte-peso-regular: 400;
+    --fonte-peso-medium: 500;
+    --fonte-peso-semibold: 600;
+    --fonte-peso-bold: 700;
+    --fonte-peso-extrabold: 800;
+    /* Fonte - Entrelinha */
+    --fonte-entrelinha: 160%;
+    /* Tipo de movimento do scroll */
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,113 @@
+.rodape {
+    background-color: var(--cor-verde);
+    box-sizing: border-box;
+    color: var(--cor-fundo-claro);
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.rodape__informacoes {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape__informacoes-logo {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    width: 13.83rem;
+}
+
+.rodape__informacoes-redes-sociais {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.rodape__informacoes-rede {
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: #00000000;
+}
+
+.rodape__informacoes-rede:nth-child(2n) {
+    margin: 0 1.5rem;
+}
+
+.rodape__icone::before {
+    font-size: 1.5rem;
+}
+
+.rodape__informacoes-telefone {
+    align-items: center;
+    color: var(--cor-fundo);
+    cursor: pointer;
+    display: flex;
+    font-weight: var(--fonte-peso-bold);
+    line-height: var(--fonte-entrelinha);
+    margin-bottom: 0.5rem;
+}
+
+.rodape__endereco {
+    margin-bottom: 1.5rem;
+}
+
+.rodape__endereco-cidade {
+    font-size: var(--fonte-tamanho-texto-grande);
+    font-weight: var(--fonte-peso-bold);
+    line-height: var(--fonte-entrelinha);
+}
+
+.rodape__endereco-completo {
+    color: var(--cor-fundo);
+    font-weight: var(--fonte-peso-bold);
+    line-height: var(--fonte-entrelinha);
+    text-decoration: underline;
+}
+
+.rodape__desenvolvedor {
+    display: flex;
+    flex-direction: column;
+
+    -webkit-tap-highlight-color: #00000000;
+}
+
+.rodape__desenvolvedor-texto {
+    font-weight: var(--fonte-peso-bold);
+    line-height: var(--fonte-entrelinha);
+    margin-bottom: 0.5rem;
+}
+
+.rodape__desenvolvedor-logo {
+    height: 2rem;
+    width: 11.776rem;
+}
+
+@media screen and (min-width: 768px) {
+    .rodape {
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rodape__endereco {
+        margin-bottom: 0;
+    }
+
+    .rodape__endereco {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .rodape__endereco-completo {
+        text-decoration: none;
+    }
+
+    .rodape__endereco-completo:hover {
+        text-decoration: underline;
+    }
+}

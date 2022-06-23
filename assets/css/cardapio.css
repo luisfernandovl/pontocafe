@@ -1,0 +1,64 @@
+.cardapio {
+    padding-top: 5.5rem;
+    overflow: hidden;
+}
+
+.cardapio__titulo {
+    align-items: center;
+    animation: aparece-pela-esquerda 500ms linear;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--fonte-tamanho-texto-corrido);
+    line-height: var(--fonte-entrelinha);
+}
+
+.cardapio__titulo--maior {
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte-familia-auxiliar);
+    font-size: var(--fonte-tamanho-h4);
+    font-weight: var(--fonte-peso-bold);
+    line-height: var(--fonte-entrelinha);
+}
+
+.cardapio__subtitulo {
+    color: var(--cor-texto-secundario);
+}
+
+.cardapio__lista-chips {
+    animation: aparece-pela-esquerda 500ms linear;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.cardapio__chip {
+    background-color: var(--cor-marrom-desativado);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    color: var(--cor-fundo-claro);
+    cursor: pointer;
+    font-size: var(--fonte-tamanho-texto-menor);
+    line-height: var(--fonte-entrelinha);
+    padding: 0 0.5rem;
+    transition: 300ms linear;
+
+    -webkit-tap-highlight-color: var(--cor-marrom-tap);
+}
+
+.cardapio__chip:nth-child(2) {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.cardapio__chip--ativo {
+    background-color: var(--cor-marrom);
+}
+
+.cardapio__secao {
+    display: block;
+    animation: aparece-pela-direita 500ms linear forwards;
+}
+
+.invisivel {
+    display: none;
+}

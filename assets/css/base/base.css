@@ -1,0 +1,109 @@
+@import url(reset.css);
+@import url(variaveis.css);
+
+@font-face {
+    font-family: 'Font Awesome Brands';
+    src: url(../../fonts/fa-brands-400.woff2);
+}
+
+body {
+    background-color: #F0F0F0;
+    color: var(--cor-texto-secundario);
+    font-family: var(--fonte-familia-principal);
+    font-size: var(--fonte-tamanho-texto-corrido);
+    font-weight: var(--fonte-peso-regular);
+    width: 100%;
+}
+
+.container {
+    padding: 0 1rem;
+}
+
+.icone::before,
+.icone::after {
+    font-size: 1rem;
+    font-weight: var(--fonte-peso-regular);
+}
+
+.icone--margem-esquerda::after {
+    margin-left: 0.25rem;
+}
+
+.icone--margem-direita::before {
+    margin-right: 0.25rem;
+}
+
+.icone-cardapio::before {
+    font-family: 'Material Symbols Outlined';
+    content: '\ea19';
+}
+
+.icone-casa::before {
+    font-family: 'Material Symbols Outlined';
+    content: '\e88a';
+}
+
+.icone-entrega::before {
+    font-family: 'Material Symbols Outlined';
+    content: '\eb1d';
+}
+
+.icone-facebook::before {
+    font-family: 'Font Awesome Brands';
+    content: '\f09a';
+}
+
+.icone-ifood {
+    background: url(../../imgs/icons/ifood.svg) no-repeat center/100%;
+}
+
+.icone-instagram::before {
+    font-family: 'Font Awesome Brands';
+    content: '\f16d';
+}
+
+.icone-link::after {
+    font-family: 'Material Symbols Outlined';
+    content: '\e89e';
+}
+
+.icone-pagamento::before {
+    font-family: 'Material Symbols Outlined';
+    content: '\ef63';
+}
+
+.icone-pessoa::before {
+    font-family: 'Material Symbols Outlined';
+    content: '\e7fd';
+}
+
+.icone-sacola::before {
+    font-family: 'Material Symbols Outlined';
+    content: '\e54c';
+}
+
+.icone-seta--cima::before {
+    font-family: 'Material Symbols Outlined';
+    content: '\eacf';
+}
+
+.icone-seta--baixo::before {
+    font-family: 'Material Symbols Outlined';
+    content: '\ead0';
+}
+
+.icone-twitter::before {
+    font-family: 'Font Awesome Brands';
+    content: '\f099';
+}
+
+.icone-whatsapp::before {
+    font-family: 'Font Awesome Brands';
+    content: '\f232';
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+}

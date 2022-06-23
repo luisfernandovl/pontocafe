@@ -1,0 +1,200 @@
+.lista-cartao {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cartao {
+    background-color: var(--cor-fundo-claro);
+    border: 1px solid var(--cor-fundo-medio);
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 16px var(--cor-sombra);
+    box-sizing: border-box;
+    display: flex;
+    margin: 1rem 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.cartao__imagem {
+    background-color: azure;
+    height: 172px;
+    width: 50%;
+}
+
+.cartao__imagem--cafe-espresso {
+    background: url(../../imgs/imagem__cafe-espresso.png) no-repeat center/100%;
+}
+
+.cartao__imagem--cafe-latte {
+    background: url(../../imgs/imagem__cafe-latte.png) no-repeat center/100%;
+}
+
+.cartao__imagem--cha {
+    background: url(../../imgs/imagem__cha.png) no-repeat center/100%;
+}
+
+.cartao__imagem--chocolate-quente {
+    background: url(../../imgs/imagem__chocolate-quente.png) no-repeat center/100%;
+}
+
+.cartao__imagem--mate-gelado {
+    background: url(../../imgs/imagem__mate-gelado.png) no-repeat center/100%;
+}
+
+.cartao__imagem--limonada {
+    background: url(../../imgs/imagem__limonada.png) no-repeat center/100%;
+}
+
+.cartao__imagem--pao-queijo {
+    background: url(../../imgs/imagem__pao-queijo.png) no-repeat center/100%;
+}
+
+.cartao__imagem--croissant-queijo {
+    background: url(../../imgs/imagem__croissant-queijo.png) no-repeat center/100%;
+}
+
+.cartao__imagem--misto-quente {
+    background: url(../../imgs/imagem__misto.png) no-repeat center/100%;
+}
+
+.cartao__imagem--cookies {
+    background: url(../../imgs/imagem__cookies.png) no-repeat center/100%;
+}
+
+.cartao__imagem--bolo-chocolate {
+    background: url(../../imgs/imagem__bolo-chocolate.png) no-repeat center/100%;
+}
+
+.cartao__imagem--torta-morango {
+    background: url(../../imgs/imagem__torta-morango.png) no-repeat center/100%;
+}
+
+.cartao__informacoes {
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    width: 50%;
+}
+
+.cartao__nome {
+    color: var(--cor-marrom);
+    font-family: var(--fonte-familia-auxiliar);
+    font-size: var(--fonte-tamanho-h4);
+    font-weight: var(--fonte-peso-bold);
+}
+
+.cartao__tamanho {
+    color: var(--cor-marrom-claro);
+    font-family: var(--fonte-familia-auxiliar);
+    font-weight: var(--fonte-peso-bold);
+    line-height: var(--fonte-entrelinha);
+}
+
+.cartao__preco {
+    color: var(--cor-itens-inativos);
+    font-family: var(--fonte-familia-auxiliar);
+    font-size: var(--fonte-tamanho-texto-grande);
+    font-weight: var(--fonte-peso-bold);
+    line-height: var(--fonte-entrelinha);
+    margin-top: 0.5rem;
+}
+
+.cartao__preco--antigo {
+    color: var(--cor-divisoes);
+    text-decoration: line-through;
+}
+
+.cartao--ambiente {
+    flex-direction: column;
+    min-height: 184px;
+    justify-content: flex-end;
+}
+
+.cartao--ambiente-balcao {
+    background: url(../../imgs/ambiente__balcao.png) no-repeat center/100%;
+}
+
+.cartao--ambiente-livros {
+    background: url(../../imgs/ambiente__livros.png) no-repeat center/100%;
+}
+
+.cartao--ambiente-mesa {
+    background: url(../../imgs/ambiente__mesa.png) no-repeat center/100%;
+}
+
+.cartao__texto--ambiente {
+    background-color: hsla(30, 100%, 2%, 0.56);
+    box-sizing: border-box;
+    color: var(--cor-fundo);
+    display: flex;
+    font-weight: var(--fonte-peso-semibold);
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .cartao {
+        width: calc(50% - 1rem);
+    }
+
+    .cartao:nth-child(2n+1) {
+        margin-right: 2rem;
+    }
+
+    .cartao--ambiente:nth-child(2n+1) {
+        margin: 1rem auto;
+    }
+
+    .cartao--ambiente {
+        width: 75%;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cartao {
+        margin-left: 0;
+        margin-right: 0;
+        width: calc((100% - 4rem) / 3);
+    }
+
+    .cartao:nth-child(2n+1) {
+        margin-right: 0;
+    }
+
+    .cartao:nth-child(3n+1) {
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+
+    .cartao:nth-child(3n) {
+        margin-left: 2rem;
+        margin-right: 0;
+    }
+
+    .cartao--ambiente:nth-child(2n+1) {
+        margin-right: 0;
+    }
+
+    .cartao--ambiente:nth-child(3n+1) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .cartao--ambiente:nth-child(3n) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .cartao--ambiente {
+        margin-left: 0;
+        margin-right: 0;
+        width: calc(33.33% - (4rem / 3));
+    }
+
+    .cartao--ambiente:nth-child(2) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
